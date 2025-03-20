@@ -3,23 +3,32 @@
 [[arXiv](...)]
 [[webpage](...)]
 
-
 ## Table of Contents
-1. [...](#...)
+1. [Related works](#related-works)
+    1. [Surveys]()
+    2. [Task-driven object detection and segmentation](#task-driven-detection)
+    3. [Affordance classification](#affordance-classification)
+    4. [Affordance detection and segmentation](#affordance-detection)
+    5. [Affordance grounding](#affordance-grounding)
+    6. [End-effector pose estimation and synthesis](#end-effector-pose)
 2. [Contributing](#contributing)
 3. [Credits](#credits)
 4. [Enquiries, Question and Comments](#enquiries-question-and-comments)
 5. [License](#license)
 
-### Task-driven object detection and segmentation
+## Related works <a name="related-works"></a>
 
-### Affordance classification
+### Surveys <a name="surveys"></a>
 
-### Affordance detection and segmentation
+### Task-driven object detection and segmentation <a name="task-driven-detection"></a>
 
-### Affordance grounding
+### Affordance classification <a name="affordance-classification"></a>
 
-### End-effector pose estimation and synthesis
+### Affordance detection and segmentation <a name="affordance-detection"></a>
+
+### Affordance grounding <a name="affordance-grounding"></a>
+
+### End-effector pose estimation and synthesis <a name="end-effector-pose"></a>
 
 ## Contributing <a name="contributing"></a>
 
