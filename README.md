@@ -47,11 +47,52 @@
 
 </details>
 
-### Affordance detection and segmentation <a name="affordance-detection"></a>
+<details>
+<summary> Affordance detection and segmentation <a name="affordance-detection"></a></summary>
 
-### Affordance grounding <a name="affordance-grounding"></a>
+- [AffordanceNet: An end-to-end deep learning approach for object affordance detection]()
+- [Bayesian deep learning for affordance segmentation in images]()
+- [Learning affordance segmentation: An investigative study]()
+- [Are standard object segmentation models sufficient for learning affordance segmentation?]()
+- [Object affordance detection with boundary-preserving network for robotic manipulation task]()
+- [A new semantic edge aware network for object affordance detection]()
+- [Object-based affordances detection with convolutional neural networks and dense conditional random fields]()
+- [Weakly supervised affordance detection]()
+- [Adosmnet: a novel visual affordance detection network with object shape mask guided feature encoders]()
+- [Detecting object affordances with convolutional neural networks]()
+- [FPHA-Afford: A domain-specific benchmark dataset for occluded object affordance estimation in human-object-robot interaction]()
+- [Affordance segmentation of hand-occluded containers from exocentric images]()
+- [Dual affordance detection using an efficient attention convolutional neural network]()
+- [Multi-scale fusion and global semantic encoding for affordance detection]()
+- [Object affordance detection with relationship-aware network]()
+- [Strap: Structured object affordance segmentation with point supervision]()
+- [Segmenting object affordances: Reproducibility and sensitivity to scale]()
+
+</details>
 
 <details>
+<summary> Affordance grounding <a name="affordance-grounding"></a></summary>
+
+- Understanding 3d object interaction from a single image
+- Locate: Localize and transfer object parts for weakly supervised affordance grounding
+- One-shot transfer of affordance regions? affcorrs!
+- Demo2vec: Reasoning object affordances from online video
+- Grounded human-object interaction hotspots from video
+- Oval-prompt: Open-vocabulary affordance localization for robot manipulation through LLM affordance-grounding
+- What does clip know about peeling a banana?
+- One-shot open affordance learning with foundation model
+- Learning affordance grounding from exocentric image
+- Affordancellm: Grounding affordance from vision language model
+
+</details>
+
+<details>
+
+<summary> Grasping detection <a name="grasping detection"></a></summary>
+- 
+
+</details>
+
 <summary> End-effector pose estimation and synthesis <a name="end-effector-pose"></a></summary>
 - [Ganhand: Predicting human grasp affordances in multi-object scenes](https://openaccess.thecvf.com/content_CVPR_2020/html/Corona_GanHand_Predicting_Human_Grasp_Affordances_in_Multi-Object_Scenes_CVPR_2020_paper.html)
 - [Affordance diffusion: Synthesizing hand-object interaction](https://arxiv.org/abs/2303.12538)
