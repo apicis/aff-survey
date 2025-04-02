@@ -18,7 +18,13 @@
 
 ## Related works <a name="related-works"></a>
 
-### Surveys <a name="surveys"></a>
+<details>
+<summary>  Surveys <a name="surveys"></a></summary>
+
+- [Visual affordance and function understanding](https://dl.acm.org/doi/10.1145/3446370)
+- [A survey of visual affordance recognition based on deep learning](https://ieeexplore.ieee.org/document/10171410)
+
+</details>
 
 <details>
 <summary> Task-driven object detection and segmentation <a name="task-driven-detection"></a></summary>
@@ -31,13 +37,26 @@
 
 </details>
 
-### Affordance classification <a name="affordance-classification"></a>
+<details>
+<summary> Affordance classification <a name="affordance-classification"></a></summary>
+
+- [Visual object-action recognition: Inferring object affordances from human demonstration](https://www.sciencedirect.com/science/article/pii/S107731421000175X) 
+- [Learning visual object categories for robot affordance prediction](https://journals.sagepub.com/doi/abs/10.1177/0278364909356602)
+- [High-level object affordance recognition](https://ieeexplore.ieee.org/document/8812515)
+- [Functional object descriptors for human activity modeling](https://ieeexplore.ieee.org/document/6630736)
+
+</details>
 
 ### Affordance detection and segmentation <a name="affordance-detection"></a>
 
 ### Affordance grounding <a name="affordance-grounding"></a>
 
-### End-effector pose estimation and synthesis <a name="end-effector-pose"></a>
+<details>
+<summary> End-effector pose estimation and synthesis <a name="end-effector-pose"></a></summary>
+- [Ganhand: Predicting human grasp affordances in multi-object scenes](https://openaccess.thecvf.com/content_CVPR_2020/html/Corona_GanHand_Predicting_Human_Grasp_Affordances_in_Multi-Object_Scenes_CVPR_2020_paper.html)
+- [Affordance diffusion: Synthesizing hand-object interaction](https://arxiv.org/abs/2303.12538)
+
+</details>
 
 ## Contributing <a name="contributing"></a>
 
