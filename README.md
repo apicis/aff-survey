@@ -21,6 +21,11 @@
 ### Surveys <a name="surveys"></a>
 
 ### Task-driven object detection and segmentation <a name="task-driven-detection"></a>
+- [What object should i use? - Task driven object detection](https://arxiv.org/abs/1904.03000)
+- [TaskCLIP: Extend Large Vision-Language Model for Task Oriented Object Detection](https://arxiv.org/abs/2403.08108)
+- [VLTP: Vision-Language Guided Token Pruning for Task-Oriented Segmentation](https://arxiv.org/abs/2409.08464)
+- [TOIST: Task oriented instance segmentation transformer with noun-pronoun distillation](https://arxiv.org/abs/2210.10775)
+- [CoTDet: Affordance Knowledge Prompting for Task Driven Object Detection](https://arxiv.org/abs/2309.01093)
 
 ### Affordance classification <a name="affordance-classification"></a>
 
