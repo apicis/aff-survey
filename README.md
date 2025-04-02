@@ -89,9 +89,10 @@
 <details>
 
 <summary> Grasping detection <a name="grasping detection"></a></summary>
-- 
 
 </details>
+
+<details>
 
 <summary> End-effector pose estimation and synthesis <a name="end-effector-pose"></a></summary>
 - [Ganhand: Predicting human grasp affordances in multi-object scenes](https://openaccess.thecvf.com/content_CVPR_2020/html/Corona_GanHand_Predicting_Human_Grasp_Affordances_in_Multi-Object_Scenes_CVPR_2020_paper.html)
