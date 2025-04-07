@@ -10,7 +10,8 @@
     3. [Affordance classification](#affordance-classification)
     4. [Affordance detection and segmentation](#affordance-detection)
     5. [Affordance grounding](#affordance-grounding)
-    6. [End-effector pose estimation and synthesis](#end-effector-pose)
+    6. [Grasping detection](#grasping-detection)
+    7. [End-effector pose estimation and synthesis](#end-effector-pose)
 2. [Contributing](#contributing)
 3. [Credits](#credits)
 4. [Enquiries, Question and Comments](#enquiries-question-and-comments)
@@ -88,7 +89,16 @@
 
 <details>
 
-<summary> Grasping detection <a name="grasping detection"></a></summary>
+<summary> Grasping detection <a name="grasping-detection"></a></summary>
+
+- [Deep Learning for Detecting Robotic Grasps](https://arxiv.org/abs/1301.3592)
+- [Real-Time Grasp Detection Using Convolutional Neural Networks](https://arxiv.org/abs/1412.3128)
+- [Robotic Grasp Detection using Deep Convolutional Neural Networks](https://arxiv.org/abs/1611.08036)
+- [GraspNet: An Efficient Convolutional Neural Network for Real-time Grasp Detection for Low-powered Devices](https://www.ijcai.org/proceedings/2018/0677.pdf)
+- [Real-world Multi-object, Multi-grasp Detection](https://arxiv.org/abs/1802.00520)
+- [ROI-based Robotic Grasp Detection for Object Overlapping Scenes](https://arxiv.org/abs/1808.10313)
+- [End-to-end Trainable Deep Neural Network for Robotic Grasp Detection and Semantic Segmentation from RGB](https://arxiv.org/abs/2107.05287)
+- [Jacquard: A Large Scale Dataset for Robotic Grasp Detection](https://arxiv.org/abs/1803.11469)
 
 </details>
 
