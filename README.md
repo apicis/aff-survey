@@ -24,6 +24,7 @@
 
 - [Visual affordance and function understanding](https://dl.acm.org/doi/10.1145/3446370)
 - [A survey of visual affordance recognition based on deep learning](https://ieeexplore.ieee.org/document/10171410)
+- [Affordances in Robotic Tasks -- A Survey](https://arxiv.org/abs/2004.07400)
 
 </details>
 
@@ -106,7 +107,8 @@
 
 <summary> End-effector pose estimation and synthesis <a name="end-effector-pose"></a></summary>
 
-- [Ganhand: Predicting human grasp affordances in multi-object scenes](https://openaccess.thecvf.com/content_CVPR_2020/html/Corona_GanHand_Predicting_Human_Grasp_Affordances_in_Multi-Object_Scenes_CVPR_2020_paper.html)
+-[Ganhand: Predicting human grasp affordances in multi-object scenes](https://openaccess.thecvf.com/content_CVPR_2020/html/Corona_GanHand_Predicting_Human_Grasp_Affordances_in_Multi-Object_Scenes_CVPR_2020_paper.html)
+- [Multi-FinGAN: Generative Coarse-To-Fine Sampling of Multi-Finger Grasps](https://arxiv.org/abs/2012.09696)
 - [Affordance diffusion: Synthesizing hand-object interaction](https://arxiv.org/abs/2303.12538)
 
 </details>
