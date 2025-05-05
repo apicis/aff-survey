@@ -1,104 +1,356 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0PEYZJE5E"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <!--  <meta name="description" content="DESCRIPTION META TAG">-->
+    <!--  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>-->
+    <!--  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>-->
+    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <!--  <meta property="og:image" content="image/your_banner_image.png" />-->
+    <!--  <meta property="og:image:width" content="1200"/>-->
+    <!--  <meta property="og:image:height" content="630"/>-->
 
-        gtag('config', 'G-T0PEYZJE5E');
 
-    </script>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <meta name="author" content="aff-seg"/>
+    <!--  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">-->
+    <!--  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">-->
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <!--  <meta name="twitter:image" content="images/your_twitter_banner_image.png">-->
+    <!--  <meta name="twitter:card" content="summary_large_image">-->
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Affordance, object detection, semantic segmentation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-    <meta property="og:title" content="Title"/>
-    <meta property="og:description" content=""/>
-    <meta property="og:image" content="assets/.png"/>
 
-    <script src="js/init.js"></script>
+    <title>Visual Affordances: Enabling Robots to Understand Object Functionality</title>
+    <!--    <link rel="icon" type="image/x-icon" href="images/favicon.ico">-->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/mystyle.css">
-    <link rel="stylesheet" href="css/academicons.css">
-    <link rel="stylesheet" href="css/academicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="css/bulma-slider.min.css">
+    <link rel="stylesheet" href="css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="js/fontawesome.all.min.js"></script>
+    <script src="js/bulma-carousel.min.js"></script>
+    <script src="js/bulma-slider.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
-
 <body>
-<div>
-    <h1>Title</h1>
-    <h3> T. Apicella<sup>1</sup>, A. Xompero<sup>2</sup>, A. Cavallaro<sup>3,4</sup></h3>
-    <sup>1</sup>Istituto Italiano di Tecnologia, Italy; <sup>2</sup>Queen Mary University of London, United Kingdom;<br>
-    <sup>3</sup>Idiap Research Institute, Switzerland; <sup>4</sup>Ecole Polytechnique Federale de Lausanne, Switzerland
-    <br>
-    <br>
-</div>
 
-<div class="links">
-    <!-- <a href="" class="icon_publication"><i class="fa fa-file-pdf-o" style="font-size:20px;"> Paper</i></a> -->
-    <a href="..." class="icon_publication"><i class="ai ai-arxiv ai-3x"
-                                                                           style="font-size:20px;"> arXiv</i></a>
-    <a href="https://github.com/apicis/aff-survey" class="icon_publication"><i class="fa fa-github"
-                                                                            style="font-size:20px;"> Repository</i></a>
-</div>
 
-<br>
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Visual Affordances: Enabling Robots to Understand Object
+                        Functionality</h1>
+                    <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                        <span class="author-block">
+                <a href="https://apicis.github.io/" target="_blank">Tommaso Apicella</a><sup>1</sup>,</span>
+                        <span class="author-block">
+                  <a href="https://kerolex.github.io/" target="_blank">Alessio Xompero</a><sup>2</sup>,</span>
+                        <span class="author-block">
+                    <a href="https://people.epfl.ch/andrea.cavallaro/?lang=en" target="_blank">Andrea Cavallaro</a><sup>3,4</sup>
+                  </span>
+                    </div>
 
-<!--
-<div class="image">
-    <img src=""/>
-</div>
--->
+                    <div class="is-size-5 publication-authors">
+                    <span class="author-block"> Istituto Italiano di Tecnologia<sup>1</sup><br>
+                      Queen Mary University of London<sup>2</sup><br>
+                      Idiap Research Institute<sup>3</sup>, École Polytechnique Fédérale de Lausanne<sup>4</sup></span>
+                        <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                    </div>
 
-<div class="text">
-    <p>
-        Abstract
-    </p>
-</div>
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- Arxiv PDF link -->
+                            <span class="link-block">
+                              <a href="" target="_blank"
+                                 class="external-link button is-normal is-rounded is-dark">
+                              <span class="icon">
+                                <i class="ai ai-arxiv"></i>
+                              </span>
+                              <span>arXiv (Coming soon)</span>
+                            </a>
+                          </span>
 
-<br>
-<div>
-    <h2 class="section">Reference</h2>
-    <div class="text">
-        If you use the information in the paper please cite the following reference.<br><br>
-        Plain text format
-        <pre>
-        ...
-        </pre>
-        <br>
-        Bibtex format
-        <pre> 
-        ...
-        </pre>
+                            <!-- Github link -->
+                            <span class="link-block">
+                    <a href="https://github.com/apicis/aff-survey" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Repository</span>
+                  </a>
+                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
-<br>
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Human-robot interaction for assistive technologies relies on the prediction of affordances,
+                        which are the potential actions a robot can perform on objects.
+                        Predicting object affordances from visual perception is formulated differently for tasks such as
+                        grasping detection, affordance classification, affordance segmentation, and hand-object
+                        interaction synthesis. In this work, we highlight the reproducibility issue in these
+                        redefinitions, making comparative benchmarks unfair and unreliable. To address this problem, we
+                        propose a unified formulation for visual affordance prediction, provide a comprehensive and
+                        systematic review of previous works highlighting strengths and limitations of methods and
+                        datasets, and analyse what challenges reproducibility. To favour transparency, we introduce the
+                        Affordance Sheet, a document to detail the proposed solution, the datasets, and the validation.
+                        As the physical properties of an object influence the interaction with the robot, we present a
+                        generic framework that links visual affordance prediction to the physical world. Using the
+                        weight of an object as an example for this framework, we discuss how estimating object mass can
+                        affect the affordance prediction. Our approach bridges the gap between affordance perception and
+                        robot actuation, and accounts for the complete information about objects of interest and how the
+                        robot interacts with them to accomplish its task.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End paper abstract -->
 
-<h2 class="section">Contact</h2>
-<div class="text">
-    If you have any further enquiries, question, or comments, please open an issue on the Github repository page.
-    <br>
-    <br>
-</div>
-<br><br>
+<section class="section is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <h2 class="title is-3">Highlights</h2>
+                    <div class="level-set has-text-justified">
+                        <ul>
+                            <li>Unified problem definition of visual affordance and systematic review</li>
+                            <li>Physically-based framework for human-robot collaboration</li>
+                            <li>Reproducibility issues in visual affordance datasets and benchmarks</li>
+                            <li>Affordance Sheet to favour reproducibility</li>
+                            <li>Open challenges and future directions of visual affordance for robotics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- Featured -->
-<div id="featured">
-    <div class="divider"></div>
-</div>
-<!-- /Featured -->
+<section class="section is-small my-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <h2 class="title is-3">Unified affordance problem formulation</h2>
+                    <div class="level-set has-text-justified">
+                        <p>
+                            We unify the formulation for visual affordance prediction across its various tasks
+                            that were treated separately or appear disconnected in previous works and
+                            surveys. Our framework decomposes the task of the robot in the following subtasks and
+                            related components:
+                        <ol>
+                            <li>Localises the object of interest (<em>object localisation</em>).</li>
+                            <li>Predicts the actions for each localised object (<em>functional classification</em>).
+                            </li>
+                            <li>Predicts the object regions that enable to perform the action (<em>functional
+                                segmentation</em>).
+                            </li>
+                            <li>Estimates the end-effector pose on the object, given the end-effector model and
+                                previous extracted information (<em>end-effector pose estimation</em>).
+                            </li>
+                            <li>Renders the end-effector on the RGB(D) image (<em>end-effector synthesis</em>).</li>
+                            <li> Reaches the estimated target pose, keeping into account the desired result also from a
+                                visual point of view through the rendered end-effector pose (<em>robot control</em>).
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                    <br>
+                    <div class="columns is-centered">
+                        <img src="assets/affordance_formulation.svg" alt="Affordance formulation" width="80%"
+                             class="center-image"/>
+                    </div>
+                    <br>
+                    Visual affordance redefinitions in previous works (colored arrows):
+                    <span class="highlight-ac">Affordance classification </span>,
+                    <span class="highlight-ads">Affordance detection and segmentation </span>,
+                    <span class="highlight-ag">Affordance grounding </span>,
+                    <span class="highlight-hope">Hand-object pose estimation </span>,
+                    <span class="highlight-hois">Hand-object synthesis </span>.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div id="footer">
+<section class="section is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <h2 class="title is-3">Physically-based framework for human-robot collaboration</h2>
+                    <div class="level-set has-text-justified">
+                        <p>
+                            We present a framework that relates the mass and the segmentation of affordance regions.
+                            Detection methods localise the objects to crop the image and use the object crops as input
+                            to other specialised models. The object of interest is selected based on the specific
+                            purpose of the interaction, e.g. taking the object that is held by a human. A model
+                            specialised in mass estimation predicts the weight of the object and a model specialised in
+                            affordance segmentation predicts the regions of interaction. The two independent predictions
+                            can be fused to support the movement planning and the adjustment of the robotic hand pose
+                            and force during the interaction (<em>robot control</em>).
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="columns is-centered">
+                    <img src="assets/affordance_mass_framework.svg" alt="Physically-based framework" width="80%"
+                         class="center-image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section is-small my-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <h2 class="title is-3">Reproducibility in visual affordance</h2>
+                    <div class="level-set has-text-justified">
+                        <p>
+                            Reproducibility challenges (RCs) in different redefinitions of visual affordance prediction
+                            include: data availability for benchmarking (RC1); availability of a method's implementation
+                            (RC2); availability of the trained model (RC3); details of the experimental setups (RC4);
+                            and details of the performance measures used for the evaluation (RC5).
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="columns is-centered">
+                    <img src="assets/rc.svg" alt="Research challenges" width="80%"
+                         class="center-image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <h2 class="title is-3">Affordance sheet</h2>
+                    <div class="level-set has-text-justified">
+                        <p>
+                            To promote reproducibility in affordance prediction and overcome reproducibility challenges,
+                            we propose the Affordance Sheet, an organised collection of good practices that can
+                            facilitate fair comparisons and the
+                            development of new solutions (see the Table below). Our Affordance Sheet includes <a
+                                href="https://arxiv.org/abs/1810.03993"> Model
+                            Cards</a> and adds sections that complement the released information.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="columns is-centered">
+                    <img src="assets/affordance_sheet.png" alt="Affordance sheet" width="80%" class="center-image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--<section class="section is-small my-light">-->
+<!--    <div class="container is-max-desktop">-->
+<!--        <div class="columns is-centered">-->
+<!--            <div class="column is-full">-->
+<!--                <div class="content">-->
+<!--                    <h2 class="title is-3">Reference</h2>-->
+<!--                    <div class="text">-->
+<!--                        If you use the information in the paper please cite the following reference.<br><br>-->
+<!--                        Plain text format-->
+<!--                        <pre>-->
+<!--        ...-->
+<!--        </pre>-->
+<!--                        <br>-->
+<!--                        Bibtex format-->
+<!--                        <pre>-->
+<!--        ...-->
+<!--        </pre>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="section is-small">-->
+<!--    <div class="container is-max-desktop">-->
+<!--        <div class="columns is-centered">-->
+<!--            <div class="column is-full">-->
+<!--                <div class="content">-->
+<!--                    <h2 class="title is-3">Contact</h2>-->
+<!--                    <div class="text">-->
+<!--                        If you have any further enquiries, question, or comments, please open an issue on the Github-->
+<!--                        repository page.-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<footer class="footer">
     <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This page was built using the <a
+                            href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic
+                        Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io"
+                                                                                target="_blank">Nerfies</a> project
+                        page.
+                        You are free to borrow the source code of this website, we just ask that you link back to this
+                        page in the footer. <br> This website is licensed under a <a rel="license"
+                                                                                     href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                                                                     target="_blank">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<br><br>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- End of Statcounter Code -->
+
 </body>
 </html>
