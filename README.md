@@ -1,7 +1,7 @@
 # Visual Affordances: Enabling robots to understand object functionality
 
 [[arXiv](...)]
-[[webpage](...)]
+[[webpage](https://apicis.github.io/aff-survey/)]
 
 ## Table of Contents
 1. [Related works](#related-works)
