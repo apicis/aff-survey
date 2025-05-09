@@ -121,9 +121,18 @@ Complete and full updates can be found in [CHANGELOG.md](CHANGELOG.md). The file
 
 
 ## Credits <a name="credits"></a>
-
+T. Apicella, A. Xompero, A. Cavallaro, Visual Affordances: Enabling robots to understand object functionality, arXiv:2505.05074 [cs.CV], 2024.
 
 ```
+@misc{apicella2025visualaffordancesenablingrobots,
+      title={Visual Affordances: Enabling Robots to Understand Object Functionality}, 
+      author={Tommaso Apicella and Alessio Xompero and Andrea Cavallaro},
+      year={2025},
+      eprint={2505.05074},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.05074}, 
+}
 ```
 
 
