@@ -1,4 +1,4 @@
-# Visual Affordances: Enabling robots to understand object functionality
+# Visual Affordance Prediction: Survey and Reproducibility
 
 [[arXiv](https://doi.org/10.48550/arXiv.2505.05074)]
 [[webpage](https://apicis.github.io/aff-survey/)]
@@ -108,7 +108,7 @@
 
 <details>
 
-<summary> End-effector pose estimation and synthesis <a name="end-effector-pose"></a></summary>
+<summary> Multi-finger pose estimation and synthesis <a name="end-effector-pose"></a></summary>
 
 - [Ganhand: Predicting human grasp affordances in multi-object scenes](https://openaccess.thecvf.com/content_CVPR_2020/html/Corona_GanHand_Predicting_Human_Grasp_Affordances_in_Multi-Object_Scenes_CVPR_2020_paper.html)
 - [Multi-FinGAN: Generative Coarse-To-Fine Sampling of Multi-Finger Grasps](https://arxiv.org/abs/2012.09696)
@@ -128,7 +128,7 @@ T. Apicella, A. Xompero, A. Cavallaro, Visual Affordances: Enabling robots to un
 
 ```
 @misc{apicella2025visualaffordancesenablingrobots,
-      title={Visual Affordances: Enabling Robots to Understand Object Functionality}, 
+      title={Visual Affordance Prediction: Survey and Reproducibility}, 
       author={Tommaso Apicella and Alessio Xompero and Andrea Cavallaro},
       year={2025},
       eprint={2505.05074},
