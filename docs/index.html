@@ -20,11 +20,12 @@
     <!--  <meta name="twitter:image" content="images/your_twitter_banner_image.png">-->
     <!--  <meta name="twitter:card" content="summary_large_image">-->
     <!-- Keywords for your paper to be indexed by-->
-    <meta name="keywords" content="Affordance, object detection, semantic segmentation">
+    <meta name="keywords"
+          content="Affordance, Scene Understanding, Semantic Segmentation, Object Detection, Pose Estimation">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <title>Visual Affordances: Enabling Robots to Understand Object Functionality</title>
+    <title>Visual Affordance Prediction: Survey and Reproducibility</title>
     <!--    <link rel="icon" type="image/x-icon" href="images/favicon.ico">-->
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -51,8 +52,8 @@
         <div class="container is-max-desktop">
             <div class="columns is-centered">
                 <div class="column has-text-centered">
-                    <h1 class="title is-1 publication-title">Visual Affordances: Enabling Robots to Understand Object
-                        Functionality</h1>
+                    <h1 class="title is-1 publication-title"> Visual Affordance Prediction:
+                        Survey and Reproducibility</h1>
                     <div class="is-size-5 publication-authors">
                         <!-- Paper authors -->
                         <span class="author-block">
@@ -110,22 +111,19 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Human-robot interaction for assistive technologies relies on the prediction of affordances,
-                        which are the potential actions a robot can perform on objects.
-                        Predicting object affordances from visual perception is formulated differently for tasks such as
-                        grasping detection, affordance classification, affordance segmentation, and hand-object
-                        interaction synthesis. In this work, we highlight the reproducibility issue in these
-                        redefinitions, making comparative benchmarks unfair and unreliable. To address this problem, we
-                        propose a unified formulation for visual affordance prediction, provide a comprehensive and
-                        systematic review of previous works highlighting strengths and limitations of methods and
-                        datasets, and analyse what challenges reproducibility. To favour transparency, we introduce the
-                        Affordance Sheet, a document to detail the proposed solution, the datasets, and the validation.
-                        As the physical properties of an object influence the interaction with the robot, we present a
-                        generic framework that links visual affordance prediction to the physical world. Using the
-                        weight of an object as an example for this framework, we discuss how estimating object mass can
-                        affect the affordance prediction. Our approach bridges the gap between affordance perception and
-                        robot actuation, and accounts for the complete information about objects of interest and how the
-                        robot interacts with them to accomplish its task.
+                        Affordances are the potential actions an agent can perform on an object, as observed by a
+                        camera. Visual affordance prediction is formulated differently for tasks such as grasping
+                        detection, affordance classification, affordance segmentation, and hand pose estimation. This
+                        diversity in formulations leads to inconsistent definitions that prevent fair comparisons
+                        between methods. In this paper, we propose a unified formulation of visual affordance prediction
+                        by accounting for the complete information on the objects of interest and the interaction of the
+                        agent with the objects to accomplish a task. This unified formulation allows us to
+                        comprehensively and systematically review disparate visual affordance works, highlighting
+                        strengths and limitations of both methods and datasets. We also discuss reproducibility issues,
+                        such as the unavailability of methods implementation and experimental setups details, making
+                        benchmarks for visual affordance prediction unfair and unreliable. To favour transparency, we
+                        introduce the Affordance Sheet, a document that details the solution, datasets, and validation
+                        of a method, supporting future reproducibility and fairness in the community.
                     </p>
                 </div>
             </div>
@@ -143,7 +141,6 @@
                     <div class="level-set has-text-justified">
                         <ul>
                             <li>Unified problem definition of visual affordance and systematic review</li>
-                            <li>Physically-based framework for human-robot collaboration</li>
                             <li>Reproducibility issues in visual affordance datasets and benchmarks</li>
                             <li>Affordance Sheet to favour reproducibility</li>
                             <li>Open challenges and future directions of visual affordance for robotics</li>
@@ -163,39 +160,23 @@
                     <h2 class="title is-3">Unified affordance problem formulation</h2>
                     <div class="level-set has-text-justified">
                         <p>
-                            We unify the formulation for visual affordance prediction across its various tasks
-                            that were treated separately or appear disconnected in previous works and
-                            surveys. Our framework decomposes the task of the robot in the following subtasks and
-                            related components:
+                            Our formulation integrates the redefinitions related to affordance prediction given the task
+                            to accomplish and the RGB image. We decompose visual affordance prediction in the following
+                            subtasks and related components:
                         <ol>
-                            <li>Localises the object of interest (<em>object localisation</em>).</li>
-                            <li>Predicts the actions for each localised object (<em>functional classification</em>).
+                            <li>Localise the object of interest (<em>object localisation</em>).</li>
+                            <li>Predict the actions for each localised object (<em>functional classification</em>).
                             </li>
-                            <li>Predicts the object regions that enable to perform the action (<em>functional
+                            <li>Predict the object regions that enable to perform the action (<em>functional
                                 segmentation</em>).
                             </li>
-                            <li>Estimates the end-effector pose on the object, given the end-effector model and
-                                previous extracted information (<em>end-effector pose estimation</em>).
+                            <li>Estimate the hand pose on the object, given the hand model and
+                                previous extracted information (<em>hand pose estimation</em>).
                             </li>
-                            <li>Renders the end-effector on the RGB(D) image (<em>end-effector synthesis</em>).</li>
-                            <li> Reaches the estimated target pose, keeping into account the desired result also from a
-                                visual point of view through the rendered end-effector pose (<em>robot control</em>).
-                            </li>
+                            <li>Render the hand on the RGB image (<em>hand synthesis</em>).</li>
                         </ol>
                         </p>
                     </div>
-                    <br>
-                    <div class="columns is-centered">
-                        <img src="assets/affordance_formulation.svg" alt="Affordance formulation" width="80%"
-                             class="center-image"/>
-                    </div>
-                    <br>
-                    Visual affordance redefinitions in previous works (colored arrows):
-                    <span class="highlight-ac">Affordance classification </span>,
-                    <span class="highlight-ads">Affordance detection and segmentation </span>,
-                    <span class="highlight-ag">Affordance grounding </span>,
-                    <span class="highlight-hope">Hand-object pose estimation </span>,
-                    <span class="highlight-hois">Hand-object synthesis </span>.
                 </div>
             </div>
         </div>
@@ -203,35 +184,6 @@
 </section>
 
 <section class="section is-small">
-    <div class="container is-max-desktop">
-        <div class="columns is-centered">
-            <div class="column is-full">
-                <div class="content">
-                    <h2 class="title is-3">Physically-based framework for human-robot collaboration</h2>
-                    <div class="level-set has-text-justified">
-                        <p>
-                            We present a framework that relates the mass and the segmentation of affordance regions.
-                            Detection methods localise the objects to crop the image and use the object crops as input
-                            to other specialised models. The object of interest is selected based on the specific
-                            purpose of the interaction, e.g. taking the object that is held by a human. A model
-                            specialised in mass estimation predicts the weight of the object and a model specialised in
-                            affordance segmentation predicts the regions of interaction. The two independent predictions
-                            can be fused to support the movement planning and the adjustment of the robotic hand pose
-                            and force during the interaction (<em>robot control</em>).
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <div class="columns is-centered">
-                    <img src="assets/affordance_mass_framework.svg" alt="Physically-based framework" width="80%"
-                         class="center-image"/>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section is-small my-light">
     <div class="container is-max-desktop">
         <div class="columns is-centered">
             <div class="column is-full">
@@ -256,7 +208,7 @@
     </div>
 </section>
 
-<section class="section is-small">
+<section class="section is-small my-light">
     <div class="container is-max-desktop">
         <div class="columns is-centered">
             <div class="column is-full">
