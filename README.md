@@ -1,4 +1,4 @@
-# Visual Affordances: Enabling robots to understand object functionality
+# Visual Affordance Prediction: Survey and Reproducibility
 
 [[arXiv](https://doi.org/10.48550/arXiv.2505.05074)]
 [[webpage](https://apicis.github.io/aff-survey/)]
@@ -46,6 +46,7 @@
 - [Learning visual object categories for robot affordance prediction](https://journals.sagepub.com/doi/abs/10.1177/0278364909356602)
 - [High-level object affordance recognition](https://ieeexplore.ieee.org/document/8812515)
 - [Functional object descriptors for human activity modeling](https://ieeexplore.ieee.org/document/6630736)
+- [EGO-TOPO: Environment Affordances from Egocentric Video](https://openaccess.thecvf.com/content_CVPR_2020/papers/Nagarajan_Ego-Topo_Environment_Affordances_From_Egocentric_Video_CVPR_2020_paper.pdf)
 
 </details>
 
@@ -76,6 +77,7 @@
 <summary> Affordance grounding <a name="affordance-grounding"></a></summary>
 
 - [Understanding 3d object interaction from a single image](https://arxiv.org/abs/2305.09664)
+- [Leverage Interactive Affinity for Affordance Learning](https://openaccess.thecvf.com/content/CVPR2023/papers/Luo_Leverage_Interactive_Affinity_for_Affordance_Learning_CVPR_2023_paper.pdf)
 - [Locate: Localize and transfer object parts for weakly supervised affordance grounding](https://arxiv.org/abs/2303.09665)
 - [One-shot transfer of affordance regions? affcorrs!](https://arxiv.org/abs/2311.17776)
 - [Demo2vec: Reasoning object affordances from online video](https://openaccess.thecvf.com/content_cvpr_2018/html/Fang_Demo2Vec_Reasoning_Object_CVPR_2018_paper.html)
@@ -85,6 +87,7 @@
 - [One-shot open affordance learning with foundation model](https://arxiv.org/abs/2209.07147)
 - [Learning affordance grounding from exocentric image](https://arxiv.org/abs/2203.09905)
 - [Affordancellm: Grounding affordance from vision language model](https://arxiv.org/abs/2401.06341)
+- [Knowledge enhanced bottom-up affordance grounding for robotic interaction](https://peerj.com/articles/cs-2097/)
 
 </details>
 
@@ -105,7 +108,7 @@
 
 <details>
 
-<summary> End-effector pose estimation and synthesis <a name="end-effector-pose"></a></summary>
+<summary> Multi-finger pose estimation and synthesis <a name="end-effector-pose"></a></summary>
 
 - [Ganhand: Predicting human grasp affordances in multi-object scenes](https://openaccess.thecvf.com/content_CVPR_2020/html/Corona_GanHand_Predicting_Human_Grasp_Affordances_in_Multi-Object_Scenes_CVPR_2020_paper.html)
 - [Multi-FinGAN: Generative Coarse-To-Fine Sampling of Multi-Finger Grasps](https://arxiv.org/abs/2012.09696)
@@ -121,11 +124,11 @@ Complete and full updates can be found in [CHANGELOG.md](CHANGELOG.md). The file
 
 
 ## Credits <a name="credits"></a>
-T. Apicella, A. Xompero, A. Cavallaro, Visual Affordances: Enabling robots to understand object functionality, arXiv:2505.05074 [cs.CV], 2024.
+T. Apicella, A. Xompero, A. Cavallaro, Visual Affordance Prediction: Survey and Reproducibility, arXiv:2505.05074 [cs.CV], 2024.
 
 ```
-@misc{apicella2025visualaffordancesenablingrobots,
-      title={Visual Affordances: Enabling Robots to Understand Object Functionality}, 
+@misc{apicella2025visual,
+      title={Visual Affordance Prediction: Survey and Reproducibility}, 
       author={Tommaso Apicella and Alessio Xompero and Andrea Cavallaro},
       year={2025},
       eprint={2505.05074},
