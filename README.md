@@ -124,10 +124,10 @@ Complete and full updates can be found in [CHANGELOG.md](CHANGELOG.md). The file
 
 
 ## Credits <a name="credits"></a>
-T. Apicella, A. Xompero, A. Cavallaro, Visual Affordances: Enabling robots to understand object functionality, arXiv:2505.05074 [cs.CV], 2024.
+T. Apicella, A. Xompero, A. Cavallaro, Visual Affordance Prediction: Survey and Reproducibility, arXiv:2505.05074 [cs.CV], 2024.
 
 ```
-@misc{apicella2025visualaffordancesenablingrobots,
+@misc{apicella2025visual,
       title={Visual Affordance Prediction: Survey and Reproducibility}, 
       author={Tommaso Apicella and Alessio Xompero and Andrea Cavallaro},
       year={2025},
