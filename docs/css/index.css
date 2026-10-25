@@ -32,6 +32,10 @@ body {
   color: rgba(0,0,0,.7)
 }
 
+.content li + li {
+  margin-top: 0;
+}
+
 .highlight-ac {
 background-color:rgb(141, 236, 13);
 color:white;
@@ -174,4 +178,51 @@ color:white;
 }
 .description {
   margin-top: 10px;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.legend-rect {
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.legend-color-1 {
+  background-color: rgb(233, 180, 40);
+}
+
+.legend-color-2 {
+  background-color: rgb(167, 121, 204);
+}
+
+.legend-color-3 {
+  background-color: rgb(0, 159, 230);
+}
+
+.legend-color-4 {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #000;
+}
+
+.legend-ac {
+  background-color: rgb(141, 236, 13);
+}
+
+.legend-ads {
+  background-color: rgb(91, 185, 72);
+}
+
+.legend-ag {
+  background-color: rgb(13, 236, 232);
+}
+
+.legend-epe {
+  background-color: rgb(214, 150, 45);
 }

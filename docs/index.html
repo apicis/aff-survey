@@ -52,53 +52,75 @@
         <div class="container is-max-desktop">
             <div class="columns is-centered">
                 <div class="column has-text-centered">
-                    <h1 class="title is-1 publication-title"> Visual Affordance Prediction:
+                    <h1 class="title is-1 publication-title"> Visual Affordance Prediction: 
                         Survey and Reproducibility</h1>
                     <div class="is-size-5 publication-authors">
                         <!-- Paper authors -->
                         <span class="author-block">
-                <a href="https://apicis.github.io/" target="_blank">Tommaso Apicella</a><sup>1</sup>,</span>
+                        <a href="https://apicis.github.io/" target="_blank">Tommaso Apicella</a><sup>1</sup>,</span>
                         <span class="author-block">
-                  <a href="https://kerolex.github.io/" target="_blank">Alessio Xompero</a><sup>2</sup>,</span>
+                        <a href="https://kerolex.github.io/" target="_blank">Alessio Xompero</a><sup>2</sup>,</span>
                         <span class="author-block">
-                    <a href="https://people.epfl.ch/andrea.cavallaro/?lang=en" target="_blank">Andrea Cavallaro</a><sup>3,4</sup>
-                  </span>
+                        <a href="https://people.epfl.ch/andrea.cavallaro/?lang=en" target="_blank">Andrea Cavallaro</a><sup>3,4</sup>
+                        </span>
                     </div>
 
                     <div class="is-size-5 publication-authors">
                     <span class="author-block"> Istituto Italiano di Tecnologia<sup>1</sup><br>
                       Queen Mary University of London<sup>2</sup><br>
                       Idiap Research Institute<sup>3</sup>, École Polytechnique Fédérale de Lausanne<sup>4</sup></span>
-                        <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                     </div>
 
                     <div class="column has-text-centered">
                         <div class="publication-links">
                             <!-- Arxiv PDF link -->
                             <span class="link-block">
-                              <a href="https://doi.org/10.48550/arXiv.2505.05074" target="_blank"
+                            <a href="https://doi.org/10.48550/arXiv.2505.05074" target="_blank"
                                  class="external-link button is-normal is-rounded is-dark">
                               <span class="icon">
                                 <i class="ai ai-arxiv"></i>
                               </span>
                               <span>arXiv</span>
                             </a>
-                          </span>
+                            </span>
 
                             <!-- Github link -->
                             <span class="link-block">
-                    <a href="https://github.com/apicis/aff-survey" target="_blank"
-                       class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Repository</span>
-                  </a>
-                </span>
+                            <a href="https://github.com/apicis/aff-survey" target="_blank"
+                                class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>Repository</span>
+                            </a>
+                            </span>
+                            
+                            <!-- Gradio app link -->
+                            <span class="link-block">
+                            <a href="" target="_blank"
+                                class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                                <i class="far fa-file-alt"></i>
+                            </span>
+                            <span>Affordance Sheet demo</span>
+                            </a>
+                            </span>
                         </div>
                     </div>
+                <div class="column is-full">
+                    <div class="content">
+                    <img src="assets/affordance_crop.png" alt="Affordance prediction" width="60%" height="60%" class="center-image"/>
+                    <br>
+                    <p>Visual affordance prediction in case of a knife: <i>what</i> actions the agent performs, 
+                <i>where</i> the end-effector (hand) interacts with the object (heat map), and <i>how</i> the interaction is performed (end-effector pose for cutting). 
+                Legend: <span class="legend-rect legend-color-2"> </span> <i>grasp</i>, 
+                <span class="legend-rect legend-color-1"></span> <i>slide</i>, 
+                <span class="legend-rect legend-color-3"></span> <i>cut</i>, 
+                <span class="legend-rect legend-color-4"></span> <i>pierce</i>
+                </p>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>
@@ -140,7 +162,8 @@
                     <h2 class="title is-3">Highlights</h2>
                     <div class="level-set has-text-justified">
                         <ul>
-                            <li>Unified problem definition of visual affordance and systematic review</li>
+                            <li>Unified problem formulation of visual affordance</li>
+                            <li>Systematic review of methods and datasets</li>
                             <li>Reproducibility issues in visual affordance datasets and benchmarks</li>
                             <li>Affordance Sheet to favour reproducibility</li>
                             <li>Open challenges and future directions of visual affordance for robotics</li>
@@ -157,8 +180,43 @@
         <div class="columns is-centered">
             <div class="column is-full">
                 <div class="content">
+                    <h2 class="title is-3">Motivation</h2>
+                    <div class="level-set has-text-justified">
+                        <p>
+                           Given a high-level task the agent has to perform, we consider as a visual affordance the combination of the following three aspects:
+                        <ul>
+                            <li><em>what</em>: the potential action on the most suitable objects in the image to accomplish the task;</li>
+                            <li><em>where</em>: the region where the agent will interact with the object through its hand; and</li>
+                            <li><em>how</em>: the most physically plausible end-effector (hand) pose to interact with the object.</li>
+                        </ul>
+                        </p>
+                        
+                        <p>
+                            Our definition enables the grouping and comparison of previous works, 
+                            showing that an incomplete formulation of the affordance (maximum two aspects) was considered. 
+                            None of the previous surveys discussed the limitations in affordance formulations 
+                            or provided a unifying view that enables an agent to interact with objects.
+                        </p>
+                    </div>
+                    <br>
+                    <img src="assets/affordance_venn.png" alt="Affordance survey" width="80%" class="center-image"/>
+                    <p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
                     <h2 class="title is-3">Unified affordance problem formulation</h2>
                     <div class="level-set has-text-justified">
+                        <p>
+                        </p>
                         <p>
                             Our formulation integrates the redefinitions related to affordance prediction given the task
                             to accomplish and the RGB image. We decompose visual affordance prediction in the following
@@ -170,13 +228,103 @@
                             <li>Predict the object regions that enable to perform the action (<em>functional
                                 segmentation</em>).
                             </li>
-                            <li>Estimate the hand pose on the object, given the hand model and
-                                previous extracted information (<em>hand pose estimation</em>).
+                            <li>Estimate the end-effector pose on the object, given the hand model and
+                                previous extracted information (<em>end-effector pose estimation</em>).
                             </li>
-                            <li>Render the hand on the RGB image (<em>hand synthesis</em>).</li>
                         </ol>
                         </p>
+                        <p>
+                            Each component of our formulation instantiates one or more subtasks. 
+                            For example, functional segmentation groups affordance segmentation and affordance grounding, 
+                            as these subtasks have a similar problem formulation; grasping detection can be considered as 
+                            a special case of end-effector pose estimation. 
+                        </p>
                     </div>
+                    <br>
+                    <img src="assets/affordance_taxonomy.svg" alt="Affordance taxonomy" width="80%" class="center-image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section is-small my-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <h2 class="title is-3">Previous methods</h2>
+                    <div class="level-set has-text-justified">
+                    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: left; font-family: Arial, sans-serif;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th style="width: 20%;">Redefinition</th>
+            <th style="width: 20%;">Considered aspects</th>
+            <th style="width: 30%;">Challenges</th>
+            <th style="width: 30%;">Limitations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Functional classification</td>
+            <td>
+                <em>What</em>: Potential actions or affordance classes an agent can perform on an object from an input image given a specific task.
+            </td>
+            <td>
+                <ul>
+                    <li>Without a defined task, a single object has multiple plausible affordances (e.g., a cup can suggest picking or filling).</li>
+                    <li>Objects with highly similar visual appearances can afford entirely different actions (e.g., a trowel vs. a turner).</li>
+                    <li>Graphical complexity and dimensionality reduction techniques used in some methods challenge scalability to high-resolution images.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Physical interaction between the agent and the object is not considered because the predicted action is not associated with a specific interaction region in the image.</li>
+                    <li>Multiple options on <em>how</em> and <em>where</em> to perform the interaction.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Functional segmentation</td>
+            <td>
+                <em>Where</em>: Predicts and identifies where the agent needs to perform the interaction on the object by separating its functional regions or grounding the specific region needed for a defined action.
+            </td>
+            <td>
+                <ul>
+                    <li>Occlusions, blurred or poorly defined edges, and transparent objects</li>
+                    <li>Processing feature maps at low resolutions causes important details like boundaries to degrade for background objects.</li>
+                    <li>When attention weights rely heavily on object class supervision, errors during occlusions can cause a complete mismatch between predicted object classes and segmented affordance regions.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>For detector-dependent models, inaccurate or incorrect object detection branch predictions can result in segmenting affordance regions entirely outside of the actual physical objects.</li>
+                    <li>Semantic models that bypass an object detector entirely can mistakenly classify background pixels as affordance regions when boundaries are unclear or occluded.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>End-effector (hand) pose estimation</td>
+            <td>
+                <em>How &amp; Where</em>: Estimates how and where the agent's hand interacts with the object by predicting the physical pose of the end-effector or hand model directly on the interaction region.
+            </td>
+            <td>
+                <ul>
+                    <li>The hand itself is not observed in the input image, forcing the model to rely solely on the visual features of the object.</li>
+                    <li>For two-finger grasping, each object presents multiple grasping points, but only a small subset leads to a successful grasp, and estimating these from a single view is difficult due to self-occlusion.</li>
+                    <li>For multi-finger models, performance drops significantly if multiple objects are present simultaneously.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Grasping detection only considers the specific interaction of picking.</li>
+                    <li>Most grasping detection models assume a top-down camera view on a tabletop or floor, failing to generalize to varied viewpoints.</li>
+                    <li>Multi-finger pose estimation methods show <em>how</em> and <em>where</em> the hand interacts but fail to identify what specific action or task is being performed.</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
                 </div>
             </div>
         </div>
@@ -184,6 +332,41 @@
 </section>
 
 <section class="section is-small">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-full">
+                <div class="content">
+                    <h2 class="title is-3">Previous datasets</h2>
+                    <div class="level-set has-text-justified">
+                        <p>
+                            Contrary to previous surveys, we compare image-based datasets for visual affordance prediction, 
+                            highlighting their similarities and limitations. We consider elements such as: the environment type (e.g. indoor),
+                            the camera viewpoint (e.g. third person); object categories (e.g. containers), type of images (e.g. mixed-reality),
+                            occlusions (e.g. hand manipulating the object), and annotation (e.g. accuracy and procedure). 
+                        </p>
+                        <p>
+                            Each dataset is specific to an affordance redefinition rather than the unified formulation, preventing datasets reuse. 
+                            Furthermore, annotating affordances in images and videos is non-trivial due to ambiguous regional boundaries, overlapping action zones, and the complexity of labelling 3D end-effector poses. 
+                            These challenges limit the cross-datasets evaluation of methods and the scalability of datasets, as manual annotations are time-consuming and ambiguous, and require expensive resources 
+                            The majority of the analysed datasets has fewer than 20 object categories and 10 affordances, focusing on tools and containers.
+                        </p>
+                    </div>
+                    <br>
+                    <img src="assets/datasets.png" alt="Affordance datasets" width="80%" class="center-image"/>
+                    <p>
+                        Legend:
+                        <span class="legend-rect legend-ac"></span> Affordance classification,
+                        <span class="legend-rect legend-ads"></span> Affordance detection and segmentation,
+                        <span class="legend-rect legend-ag"></span> Affordance grounding,
+                        <span class="legend-rect legend-epe"></span> Hand-object pose estimation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section is-small my-light">
     <div class="container is-max-desktop">
         <div class="columns is-centered">
             <div class="column is-full">
@@ -208,7 +391,7 @@
     </div>
 </section>
 
-<section class="section is-small my-light">
+<section class="section is-small">
     <div class="container is-max-desktop">
         <div class="columns is-centered">
             <div class="column is-full">
@@ -234,47 +417,6 @@
     </div>
 </section>
 
-
-<!--<section class="section is-small my-light">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        <div class="columns is-centered">-->
-<!--            <div class="column is-full">-->
-<!--                <div class="content">-->
-<!--                    <h2 class="title is-3">Reference</h2>-->
-<!--                    <div class="text">-->
-<!--                        If you use the information in the paper please cite the following reference.<br><br>-->
-<!--                        Plain text format-->
-<!--                        <pre>-->
-<!--        ...-->
-<!--        </pre>-->
-<!--                        <br>-->
-<!--                        Bibtex format-->
-<!--                        <pre>-->
-<!--        ...-->
-<!--        </pre>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-<!--<section class="section is-small">-->
-<!--    <div class="container is-max-desktop">-->
-<!--        <div class="columns is-centered">-->
-<!--            <div class="column is-full">-->
-<!--                <div class="content">-->
-<!--                    <h2 class="title is-3">Contact</h2>-->
-<!--                    <div class="text">-->
-<!--                        If you have any further enquiries, question, or comments, please open an issue on the Github-->
-<!--                        repository page.-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
 <footer class="footer">
     <div class="container">
         <div class="columns is-centered">
@@ -297,12 +439,6 @@
         </div>
     </div>
 </footer>
-
-<!-- Statcounter tracking code -->
-
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-<!-- End of Statcounter Code -->
 
 </body>
 </html>
